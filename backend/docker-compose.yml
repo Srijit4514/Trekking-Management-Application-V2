@@ -1,0 +1,28 @@
+
+services:
+  web:
+    build: .
+    command: gunicorn -b 0.0.0.0:5001 app:app
+    ports:
+      - "5001:5001"
+    volumes:
+      - .:/app
+    env_file:        # ◄ Tell Docker to read your .env file
+      - ../.env
+    depends_on:
+      - redis
+
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+
+  celery_worker:
+    build: .
+    command: celery -A tasks.celery_app worker --loglevel=info
+    volumes:
+      - .:/app# Essential so Celery can sees the exact same SQLite database file! 
+    env_file:        # ◄ Tell the worker to read the same variables
+      - ../.env
+    depends_on:
+      - redis

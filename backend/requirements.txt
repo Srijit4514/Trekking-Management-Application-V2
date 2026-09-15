@@ -1,0 +1,10 @@
+Flask
+Flask-SQLAlchemy
+Werkzeug
+Flask-JWT-Extended
+flask-cors
+python-dotenv
+celery
+redis
+gunicorn
+fpdf
