@@ -48,6 +48,8 @@ A role-based trekking management system with a Flask backend and a Vue 3 fronten
 
 ## Setup
 
+https://github.com/user-attachments/assets/0f8d6ab5-67fa-495d-b757-ed9908f05019
+
 ### 1. Clone the repository
 
 ```bash
