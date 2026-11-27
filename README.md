@@ -2,6 +2,8 @@
 
 A role-based trekking management system with a Flask backend and a Vue 3 frontend. The app supports three user types: administrators, staff members, and trekkers/users.
 
+https://github.com/user-attachments/assets/0f8d6ab5-67fa-495d-b757-ed9908f05019
+
 ## Features by Role
 
 ### Admin
@@ -47,8 +49,6 @@ A role-based trekking management system with a Flask backend and a Vue 3 fronten
 - Chart.js / vue-chartjs
 
 ## Setup
-
-https://github.com/user-attachments/assets/0f8d6ab5-67fa-495d-b757-ed9908f05019
 
 ### 1. Clone the repository
 
